@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTR Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>CTR Calculator</h1>
+      <div class="input-row">
+        <label for="clicks">Clicks:</label>
+        <input type="text" id="clicks" placeholder="Enter Clicks">
+      </div>
+      <div class="input-row">
+        <label for="impressions">Impressions:</label>
+        <input type="text" id="impressions" placeholder="Enter Impressions">
+      </div>
+      <div class="input-row">
+        <label for="ctr">CTR:</label>
+        <input type="text" id="ctr" disabled placeholder="CTR will be calculated">
+      </div>
+      <p id="ctrResultText">Your CTR is ...</p>
+      <button id="resetCTRBtn">Reset CTR Calculator</button>
+
+      <h1>Clicks Calculator</h1>
+      <div class="input-row">
+        <label for="ctrForClicks">CTR (%):</label>
+        <input type="text" id="ctrForClicks" placeholder="Enter CTR">
+      </div>
+      <div class="input-row">
+        <label for="impressionsForClicks">Impressions:</label>
+        <input type="text" id="impressionsForClicks" placeholder="Enter Impressions">
+      </div>
+      <div class="input-row">
+        <label for="clicksResult">Clicks:</label>
+        <input type="text" id="clicksResult" disabled placeholder="Clicks will be calculated">
+      </div>
+      <p id="clicksResultText">Your Total Clicks is ...</p>
+      <button id="resetClicksBtn">Reset Clicks Calculator</button>
+
+      <h1>Impressions Calculator</h1>
+      <div class="input-row">
+        <label for="clicksForImpressions">Clicks:</label>
+        <input type="text" id="clicksForImpressions" placeholder="Enter Clicks">
+      </div>
+      <div class="input-row">
+        <label for="ctrForImpressions">CTR (%):</label>
+        <input type="text" id="ctrForImpressions" placeholder="Enter CTR">
+      </div>
+      <div class="input-row">
+        <label for="impressionsResult">Impressions:</label>
+        <input type="text" id="impressionsResult" disabled placeholder="Impressions will be calculated">
+      </div>
+      <p id="impressionsResultText">Your Total Impressions is ...</p>
+      <button id="resetImpressionsBtn">Reset Impressions Calculator</button>
+
+      <!-- Add Reset All Button -->
+      <button id="resetAllBtn" class="reset-all">Reset All Calculators</button>
+    </div>
+
+    <!-- CTR Info Section -->
+    <div class="ctr-info">
+      <p>
+        <strong>CTR (Click-Through Rate)</strong> is a key metric in digital marketing that measures how often people click on an ad or a link compared to how many times it was shown. It helps assess the effectiveness of an online advertising campaign or email marketing efforts.
+      </p>
+      <p><strong>Formula:</strong><br>
+        CTR = (Total Clicks / Total Impressions) × 100%
+      </p>
+      <p><strong>Explanation:</strong><br>
+        Total Clicks is the number of times users clicked on the ad or link.<br>
+        Total Impressions is the number of times the ad or link was displayed.<br>
+        For example, if an ad received 200 clicks and was shown 10,000 times (impressions), the CTR would be:<br>
+        CTR = (200 / 10,000) × 100 = 2%
+      </p>
+      <p>This means <strong>2%</strong> of people who saw the ad clicked on it.</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
