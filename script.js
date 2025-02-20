@@ -1,3 +1,9 @@
+// Add event listeners to Calculate buttons
+document.getElementById('calculateCTRBtn').addEventListener('click', calculateCTR);
+document.getElementById('calculateClicksBtn').addEventListener('click', calculateClicks);
+document.getElementById('calculateImpressionsBtn').addEventListener('click', calculateImpressions);
+
+
 // Helper functions for formatting
 function formatCurrency(value) {
   return value ? '$' + parseFloat(value).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '';
